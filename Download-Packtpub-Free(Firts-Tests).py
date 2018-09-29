@@ -4,11 +4,11 @@ from bs4 import BeautifulSoup as bs
 
 #FORM PARA LOGIN
 login ={
-'email':'exodojaffar@gmail.com',
+'email':'email',
 'form_build_id':'form-9427b852e95009d16f1234ffea053714',
 'form_id':'packt_user_login_form',
 'op':'Login',
-'password':'2003Exodojaffar'
+'password':'senha'
 }
 
 #CABECALHO DO REQUESTS
