@@ -4,14 +4,14 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 email = str(input('EMAIL --> ')) 
-senha = str(input('SENHA -->'))
+senha= str(input('SENHA -->'))
 
 #DEFININDO O HOST
 url = 'https://www.packtpub.com'
 
 #FORM PARA LOGIN
 login ={
-'email': email,
+'email':email,
 'form_build_id':'form-ecf103a8d90be0ff61d9491510e16a30',
 'form_id':'packt_user_login_form',
 'op':'Login',
@@ -50,7 +50,7 @@ titulo = date.find('div', class_='dotd-title').find('h2').text.strip()
 
 #SALVANDO O LIVRO NA CONTA
 r = s.post(url2)#, data=recaptcha)
-print(r.status_code)
+#print(r.status_code)
 #print(r.headers)
 
 #BAIXANDO O LIVRO
